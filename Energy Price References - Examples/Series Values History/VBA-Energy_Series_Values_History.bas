@@ -9,7 +9,7 @@ Public Function EP_series_values(accessToken As String) As String
 
     'For conversion, add [currency-unit] after your code. If you don't want to convert one of them, you may leave it blank. Ex: 68520-8-1[-gal],68520-8-1[EUR-]
 
-    codes = "68520-8-1,68520-8-1[EUR-gal]"
+    codes = "68520-8-1"
     
     'This is the URL to the Get Series Values - Energy Price References API:
     url = "https://intratec.azure-api.net/energy_price/v1/export/series-hist/" & codes

@@ -1,4 +1,4 @@
-Public Function EP_series_values(accessToken As String) As String
+Public Function EP_sb_series_values(accessToken As String) As String
 
     Dim url As String
     Dim codes As String
@@ -7,7 +7,7 @@ Public Function EP_series_values(accessToken As String) As String
     codes = "68520-8-1"
     
     'This is the URL to the Get Series Values - Energy Price References API:
-    url = "https://intratec.azure-api.net/energy_price/v1/export/series/" & codes
+    url = "https://intratec.azure-api.net/energy_price/v1/sandbox/export/series/" & codes
 
     'Set up the request
     Dim request As Object
@@ -19,6 +19,6 @@ Public Function EP_series_values(accessToken As String) As String
     request.send
     
     'Get the response
-    EP_series_values = request.responseText
+    EP_sb_series_values = request.responseText
     
 End Function
