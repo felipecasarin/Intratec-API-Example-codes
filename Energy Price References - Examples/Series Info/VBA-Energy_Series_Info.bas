@@ -16,6 +16,6 @@ Public Function EP_series_info(accessToken As String) As String
     request.send
     
     'Get the response
-    sInfo = request.responseText
+    EP_series_info = request.responseText
     
 End Function

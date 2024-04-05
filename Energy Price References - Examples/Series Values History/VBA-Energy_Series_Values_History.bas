@@ -24,6 +24,6 @@ Public Function EP_series_values(accessToken As String) As String
     request.send
     
     'Get the response
-    sValues = request.responseText
+    EP_series_values = request.responseText
     
 End Function
