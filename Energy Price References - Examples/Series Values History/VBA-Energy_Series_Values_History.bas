@@ -7,7 +7,7 @@ Public Function EP_series_values(accessToken As String) As String
 
     'You can also specify the currency and unit, following the available currency and unit for that assessment, according to Intratec Energy Price References - Series Info API
 
-    'For conversion, add [currency-unit] after your code. If you don't want to convert one of them, just leave it blank. Ex: 68520-8-1[-gal],68520-8-1[EUR-]
+    'For conversion, add [currency-unit] after your code. If you don't want to convert one of them, you may leave it blank. Ex: 68520-8-1[-gal],68520-8-1[EUR-]
 
     codes = "68520-8-1,68520-8-1[EUR-gal]"
     
